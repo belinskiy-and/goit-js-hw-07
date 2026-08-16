@@ -27,7 +27,7 @@ const images = [
 
 const galleryElem = document.querySelector('.gallery');
 
-galleryElem.innerHTML = images
+const content = images
   .map(
     item => `
   <li class='gallery-item'>
@@ -35,3 +35,5 @@ galleryElem.innerHTML = images
   </li>`
   )
   .join('');
+
+galleryElem.insertAdjacentHTML('beforeend', content);
