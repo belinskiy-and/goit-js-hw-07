@@ -31,7 +31,7 @@ galleryElem.innerHTML = images
   .map(
     item => `
   <li class='gallery-item'>
-    <img class='gallery-image' src='${item.url}' alt='${item.alt}'
+    <img class='gallery-image' src='${item.url}' alt='${item.alt}'>
   </li>`
   )
   .join('');
